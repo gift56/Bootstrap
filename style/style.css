@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .meetme {
@@ -145,15 +146,28 @@ body {
 
 .text .get:hover {
   background-color: white;
-  color: black !important;
+  color: #150c21 !important;
 }
 
 .card-body h5 {
-  font-weight: 600;
-  font-size: 65px;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 991px) {
+  .card-body h5 {
+    font-weight: 600;
+    font-size: 65px;
+  }
 }
 
 .card-body p {
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 991px) {
+  .card-body p {
+    font-size: 27px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

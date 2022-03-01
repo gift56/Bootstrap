@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif!important;
 }
 .meetme {
     margin-left: 7vw;
@@ -8,7 +9,7 @@ body {
         width: 100%;
         .left {
             padding-left: 3vw;
-            @media screen and (max-width:991px) {
+            @media screen and (max-width: 991px) {
                 padding-left: 0;
             }
         }
@@ -71,7 +72,7 @@ body {
             }
         }
     }
-    .first2{
+    .first2 {
         overflow-x: hidden;
         .first22 {
             display: none;
@@ -94,16 +95,23 @@ body {
         padding: 12px 85px;
         &:hover {
             background-color: white;
-            color: black !important;
+            color: #150c21 !important;
         }
     }
 }
-.card-body{
-    h5{
-        font-weight: 600;
-        font-size: 65px;
+.card-body {
+    h5 {
+        font-size: 30px;
+        @media screen and (min-width: 991px) {
+            font-weight: 600;
+            font-size: 65px;
+        }
     }
-    p{
-        font-weight: 500;
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        @media screen and (min-width: 991px) {
+            font-size: 27px;
+        }
     }
 }
