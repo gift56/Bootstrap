@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.meetme {
+  margin-left: 7vw;
+}
+
+.meetme .navbar-nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.meetme .navbar-nav .left {
+  padding-left: 4vw;
+}
+
+.meetme .navbar-nav h6 {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.meetme .navbar-nav .button {
+  width: 10vw;
+  height: 6vh;
+  border-radius: 6px;
+}
+
+.meetme .navbar-nav .button:hover {
+  background-color: white;
+  color: black !important;
+}
+
+.meetme .hhha {
+  width: 59%;
+  height: 9vh;
+}
+
+.meetme .hhha input {
+  border-radius: 12px;
+  padding-left: 2vw;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 900px) {
+  .meetme .hhha input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
