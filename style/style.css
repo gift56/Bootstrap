@@ -14,7 +14,13 @@ body {
 }
 
 .meetme .navbar-nav .left {
-  padding-left: 4vw;
+  padding-left: 3vw;
+}
+
+@media screen and (max-width: 991px) {
+  .meetme .navbar-nav .left {
+    padding-left: 0;
+  }
 }
 
 .meetme .navbar-nav h6 {
@@ -68,12 +74,16 @@ body {
   }
 }
 
-.row .circles {
+.row .circle {
+  overflow-x: hidden;
+}
+
+.row .circle .circles {
   display: none;
 }
 
 @media screen and (min-width: 991px) {
-  .row .circles {
+  .row .circle .circles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,7 +94,36 @@ body {
   }
 }
 
-.row .text {
+.row .circle .first1 {
+  display: none;
+}
+
+@media screen and (min-width: 991px) {
+  .row .circle .first1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.row .first2 {
+  overflow-x: hidden;
+}
+
+.row .first2 .first22 {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .row .first2 .first22 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 275px;
+  }
+}
+
+.text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,15 +135,15 @@ body {
           align-items: center;
 }
 
-.row .text .h3 {
+.text .h3 {
   font-weight: 300;
 }
 
-.row .text .get {
+.text .get {
   padding: 12px 85px;
 }
 
-.row .text .get:hover {
+.text .get:hover {
   background-color: white;
   color: black !important;
 }
