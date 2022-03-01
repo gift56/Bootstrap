@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .meetme {
   margin-left: 7vw;
 }
@@ -64,10 +68,20 @@
   }
 }
 
-.row .circle {
-  background-image: url(/style/img/circl.svg);
-  background-repeat: no-repeat;
-  background-position: 0 200%;
+.row .circles {
+  display: none;
+}
+
+@media screen and (min-width: 991px) {
+  .row .circles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+    right: -90px;
+  }
 }
 
 .row .text {
@@ -88,5 +102,10 @@
 
 .row .text .get {
   padding: 12px 85px;
+}
+
+.row .text .get:hover {
+  background-color: white;
+  color: black !important;
 }
 /*# sourceMappingURL=style.css.map */
