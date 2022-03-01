@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    font-family: "Poppins", sans-serif!important;
+    font-family: "Poppins", sans-serif !important;
 }
 .meetme {
     margin-left: 7vw;
@@ -100,16 +100,22 @@ body {
     }
 }
 .card-body {
-    h5 {
-        font-size: 30px;
-        @media screen and (min-width: 991px) {
-            font-weight: 600;
+    h5{
+        font: {
+            size:29px;
+            weight:600;
+        }
+        @media screen and (min-width:1000px) {
+            font-size: 44px;
+        }
+        @media screen and (min-width:1200px) {
             font-size: 65px;
+            font-weight: 500;
         }
     }
     p {
         font-size: 18px;
-        font-weight: 300;
+        font-weight: 200;
         @media screen and (min-width: 991px) {
             font-size: 27px;
         }
