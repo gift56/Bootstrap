@@ -147,4 +147,13 @@ body {
   background-color: white;
   color: black !important;
 }
+
+.card-body h5 {
+  font-weight: 600;
+  font-size: 65px;
+}
+
+.card-body p {
+  font-weight: 500;
+}
 /*# sourceMappingURL=style.css.map */
