@@ -15,10 +15,10 @@ body {
 }
 
 .meetme .navbar-nav .left {
-  padding-left: 3vw;
+  padding-left: 2vw;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 2000px) {
   .meetme .navbar-nav .left {
     padding-left: 0;
   }
@@ -56,8 +56,20 @@ body {
 .meetme .hhha .fa-magnifying-glass::before {
   position: absolute;
   right: 2vw;
-  margin-top: 5px;
+  margin-top: 2.5vh !important;
   width: 32px;
+}
+
+@media screen and (max-width: 800px) {
+  .meetme .hhha .fa-magnifying-glass::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1447px) {
+  .meetme .hhha {
+    margin-top: 1.5vh;
+  }
 }
 
 .meetme .hhha input {
@@ -90,8 +102,15 @@ body {
     display: flex;
     position: absolute;
     z-index: -1;
-    top: -200px;
-    right: -90px;
+    top: -141px;
+    right: -44px;
+    width: 37%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .row .circle .circles {
+    top: -444px;
   }
 }
 
