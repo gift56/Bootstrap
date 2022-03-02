@@ -2,6 +2,7 @@ body {
     overflow-x: hidden;
     font-family: "Poppins", sans-serif !important;
 }
+
 .meetme {
     margin-left: 7vw;
     .navbar-nav {
@@ -109,7 +110,7 @@ body {
             font-size: 44px;
         }
         @media screen and (min-width:1200px) {
-            font-size: 65px;
+            font-size: 57px;
             font-weight: 500;
         }
     }
@@ -117,7 +118,11 @@ body {
         font-size: 18px;
         font-weight: 200;
         @media screen and (min-width: 991px) {
-            font-size: 27px;
+            font-size: 21px;
+        }
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
         }
     }
 }
+

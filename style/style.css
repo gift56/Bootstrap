@@ -162,7 +162,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .card-body h5 {
-    font-size: 65px;
+    font-size: 57px;
     font-weight: 500;
   }
 }
@@ -174,7 +174,13 @@ body {
 
 @media screen and (min-width: 991px) {
   .card-body p {
-    font-size: 27px;
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-body p {
+    font-size: 26px;
   }
 }
 /*# sourceMappingURL=style.css.map */
