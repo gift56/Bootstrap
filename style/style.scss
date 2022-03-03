@@ -1,17 +1,36 @@
-body {
-    overflow-x: hidden;
-    font-family: "Poppins", sans-serif !important;
-}
+@import "reset";
+@import "mixin";
+@import "varibles";
 .meetme {
     margin-left: 7vw;
     .navbar-nav {
         justify-content: flex-end;
         width: 100%;
+        align-items: center;
+        .right{
+            @media screen and(max-width:1200px) {
+                margin-left: 2vw!important;
+            }
+            @media screen and(max-width:900px) {
+                margin-left: 0vw!important;
+            }
+        }
         .left {
             padding-left: 2vw;
             @media screen and (min-width:2000px) {
                 padding-left: 0;
             }
+            @media screen and (max-width:900px) {
+                padding-left: 0;
+                &:nth-child(4) {
+                    width: 47%;
+
+                    a{
+                        width: 103%;
+                    }
+                }
+            }
+
         }
         h6 {
             font-size: 18px !important;
@@ -21,10 +40,10 @@ body {
             width: fit-content;
             border-radius: 6px;
             &:hover {
-                background-color: white;
-                color: black !important;
+                background-color: $white;
+                color: $black !important;
             }
-            @media screen and (min-width: 900px) {
+            @include media (900px){
                 width: 12vw;
             }
         }
@@ -37,28 +56,28 @@ body {
         .fa-magnifying-glass::before {
             position: absolute;
             right: 2vw;
-            margin-top: 2.5vh !important;
+            margin-top: 12px !important;
             width: 32px;
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 1200px) {
                 display: none;
             }
         }
-       @media screen and (min-width:1447px) {
-           margin-top: 1.5vh;
-       }
+       
 
         input {
+            position: relative;
             border-radius: 12px;
             padding-left: 2vw;
             font-size: 18px;
             font-weight: 300;
-            @media screen and (min-width: 900px) {
+            @media screen and (min-width: 1200px) {
                 display: flex;
             }
         }
     }
 }
 .row {
+    overflow-x: hidden;
     .circle {
         overflow-x: hidden;
         .circles {
@@ -70,6 +89,7 @@ body {
                 top: -141px;
                 right: -44px;
                 width: 37%;
+                padding:  0 0;
             }
             @media screen and (min-width:2000px) {
                 top: -444px;
@@ -104,8 +124,8 @@ body {
     .get {
         padding: 12px 85px;
         &:hover {
-            background-color: white;
-            color: #150c21 !important;
+            background-color: $white;
+            color: $black !important;
         }
     }
 }
