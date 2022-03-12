@@ -52,7 +52,7 @@
         width: 59%;
         height: 9vh;
         position: relative;
-        i{
+        i {
             position: absolute;
             right: 2vw;
             margin-top: 25px;
@@ -108,7 +108,6 @@
             display: none;
             @media screen and (max-width: 991px) {
                 display: flex;
-                width: 275px;
             }
         }
     }
