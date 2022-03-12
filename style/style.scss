@@ -55,7 +55,10 @@
         i {
             position: absolute;
             right: 2vw;
-            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 25px;
             width: 32px;
         }
         .fa-magnifying-glass::before {
